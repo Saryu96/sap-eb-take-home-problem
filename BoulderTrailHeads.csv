@@ -1,4 +1,4 @@
-FID,RESTROOMS,PICNIC,FISHING,AKA,AccessType,AccessID,Class,Address,Fee,BikeRack,BikeTrail,DogTube,Grills,TrashCans,ParkSpaces,ADAsurface,ADAtoilet,ADAfishing,ADAcamping,ADApicnic,ADAtrail,ADAparking,ADAfacilit,ADAfacName,HorseTrail,DateFrom,DateTo,RecycleBin,DogCompost,AccessName,THLeash
+FID,RESTROOMS,PICNIC,FISHING,AKA,AccessType,AccessID,Class,Address,Fee,BikeRack,BikeTrail,DogTube,Grills,TrashCans,ParkSpaces,ADAsurface,ADAtoilet,ADAfishing,ADAcamping,ADApicnic,Difficulty,ADAparking,ADAfacilit,ADAfacName,HorseTrail,DateFrom,DateTo,RecycleBin,DogCompost,AccessName,THLeash
 0,Yes,Yes,No, ,TH,279,T3,621 Flagstaff Summit Rd,Yes,No,No,1,Yes,4,12,Asphalt,Yes,No,No,Yes,Moderate,Yes,Yes,Wood Shelter,Not Recommended,12/31/2005 0:00,12/31/2099 0:00,Yes,No,Flagstaff Summit West,Yes
 1,Yes,Yes,No, ,TH,277,T3,790 Flagstaff Summit Rd,Yes,Yes,No,1,Yes,6,56,Asphalt,Yes,No,No,Yes,Difficult,Yes,Yes,Nature Center,Not Recommended,12/31/2005 0:00,12/31/2099 0:00,Yes,No,Flagstaff Summit East,Yes
 2,No,No,No, ,TH,502a,T1,4705 95th St,No,Yes,Yes,0,No,1,6,No,No,No,No,No,No,No,No, ,Not Recommended,12/31/2005 0:00,12/31/2099 0:00,No,No,East Boulder Trail at White Rocks,Yes

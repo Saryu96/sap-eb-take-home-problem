@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trail Finder</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trail Finder</h1>
+
+    <form method="get" action="/trails">
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address">
+
+        <label for="difficulty">Difficulty:</label>
+        <input type="text" id="difficulty" name="difficulty">
+
+        <label for="restrooms">Restrooms:</label>
+        <input type="checkbox" id="restrooms" name="restrooms">
+
+        <label for="picnic">Picnic:</label>
+        <input type="checkbox" id="picnic" name="picnic">
+
+        <label for="fishing">Fishing:</label>
+        <input type="checkbox" id="fishing" name="fishing">
+
+        <label for="fee">Fee:</label>
+        <input type="checkbox" id="fee" name="fee">
+
+        <label for="bikerack">Bike Rack:</label>
+        <input type="checkbox" id="bikerack" name="bikerack">
+
+        <button type="submit">Filter</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Address</th>
+                <th>Difficulty</th>
+                <th>Restrooms</th>
+                <th>Picnic</th>
+                <th>Fishing</th>
+                <th>Fee</th>
+                <th>Bike Rack</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{range .}}
+            <tr>
+                <td>{{.Address}}</td>
+                <td>{{.Difficulty}}</td>
+                <td>{{if .Restrooms}}Yes{{else}}No{{end}}</td>
+                <td>{{if .Picnic}}Yes{{else}}No{{end}}</td>
+                <td>{{if .Fishing}}Yes{{else}}No{{end}}</td>
+                <td>{{if .Fee}}Yes{{else}}No{{end}}</td>
+                <td>{{if .BikeRack}}Yes{{else}}No{{end}}</td>
+            </tr>
+            {{end}}
+        </tbody>
+    </table>
+</body>
+</html>
